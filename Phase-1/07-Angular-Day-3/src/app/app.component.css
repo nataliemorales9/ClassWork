@@ -1,3 +1,4 @@
-#pageHeading {
+/* CSS to be applied to this component only */
+#pageHeading {  /* Apply this styling to id = "pageHeading" */
     text-align: center;
 }

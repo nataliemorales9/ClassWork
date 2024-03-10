@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "08-Angular-Day-2": {
+    "FirstAngularApp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/08-angular-day-2",
+            "outputPath": "dist/first-angular-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "08-Angular-Day-2:build:production"
+              "buildTarget": "FirstAngularApp:build:production"
             },
             "development": {
-              "buildTarget": "08-Angular-Day-2:build:development"
+              "buildTarget": "FirstAngularApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "08-Angular-Day-2:build"
+            "buildTarget": "FirstAngularApp:build"
           }
         },
         "test": {
@@ -98,6 +98,6 @@
     }
   },
   "cli": {
-    "analytics": "eebb4398-17b9-4e80-9493-d2d3661d87e3"
+    "analytics": false
   }
 }

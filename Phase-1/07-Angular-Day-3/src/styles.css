@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+/* Styling to be applied to all components in the app */
+/* This may be overridden in the component.css file or internal css */
 html {
     background-image: linear-gradient(lightyellow, khaki);
-    height: 100%;
-    color: blue;
+    height: 100%;     /* Fill the browser screen regardless of size */
+    color: blue;    /* Make the text blue /*
 }
