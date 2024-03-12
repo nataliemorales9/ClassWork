@@ -3,12 +3,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SampleFormComponent } from './sample-form/sample-form.component';
+import { StateSealsComponent } from './state-seals/state-seals.component';
 
 @Component({ // Metadata for the component - gives Angular some basic info
   selector: 'app-root',  // This is what is used to include this component 
                          //      on a page 
   standalone: true,      // Added in Angular 17 to allow components to ne independent
-  imports: [RouterOutlet, SampleFormComponent], // identifies things used
+  imports: [RouterOutlet, SampleFormComponent, StateSealsComponent], // identifies things used
   templateUrl: './app.component.html',  // Where to find the html file
   styleUrl: './app.component.css'       //       and css file
 })

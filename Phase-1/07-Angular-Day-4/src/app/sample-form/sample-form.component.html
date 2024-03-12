@@ -63,11 +63,20 @@
             <label for="emailnofield">No Way!!!</label>
     </div>
     <div>
-        <br>                                                
+        <br>   
+        <!-- (change) - tells Angular when a change events occurs on this control -->
+        <!--            run the method called CheckAllOptions() in component.ts file -->                                             
         <input type="checkbox" (change)="CheckAllOptions()"/>
             <span>Select All</span>
     </div>
+    <!-- *ngFor is an Angular for loop -->
+    <!-- let name-for-element of array it will loop through all elements in the array -->
+    <!--        generating the html element it is coded upon -->
+    <!-- generate one div for every element in chockboxes array -->
     <div *ngFor="let checkbox of checkboxes">
+    <!-- [(ngModel)] two-bind and html element to a TypeScript variable -->
+    <!-- [value] - value to be returned when the checkbox is checked -->
+    <!-- checkbox.checked - checkbox is the name of the current object and .check is its attribute -->
     <input
         type="checkbox"
         [(ngModel)]="checkbox.checked"

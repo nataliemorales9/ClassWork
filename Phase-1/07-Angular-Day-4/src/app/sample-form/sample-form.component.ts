@@ -29,6 +29,10 @@ export class SampleFormComponent {
     public email = "";
     public email_preference = "";
 
+    // Typically checkbox values are stored as an array of objects 
+    // Attribute : datatype = initial-value - object with 2 values 
+    // name: - what is displayed in the list of choices 
+    // value: - what is stored when the checkboxes are checked
     checkboxes: any[] = [
       { name: 'American Football', value: 'Football' },
       { name: 'European Football', value: 'Soccer' },
@@ -64,6 +68,10 @@ export class SampleFormComponent {
       }
     
       get checkBoxResult() {
+        // .filter() create an array from an array if the arrow returns true for an element
+        //          loop through the array given on element at a time
+        //          if element is ture (it is checked), its included in the resulting array
+        //          if it's false (not checked), it is not included in the resulting array 
         return this.checkboxes.filter((item) => item.checked);
       }
 

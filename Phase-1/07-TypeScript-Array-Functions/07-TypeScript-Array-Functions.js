@@ -47,8 +47,6 @@ function sumAllNumbers(numbersToSum) {
         sum += aNumber; // add the current elem to sum
         return sum;
     });
-    console.log('---- .reduce examples ----');
-    console.log(numbersToSum(10, 20, 30));
     /* alternate solutions
         return numbersToSum.reduce((sum, aNumber) => { return sum += aNumber; });
     */
@@ -67,7 +65,7 @@ function sumAllNumbers(numbersToSum) {
  * Create a new array from selected elements in another array
  * (this is what .filter() does!)
  *
- * .filter() uses an anon-func that takes the current element as a parameter
+ * .filter() uses an arrow-func that takes the current element as a parameter
  * the arrow-func determines if the element it is sent meets the conditions to be included in new array
  *     it returns true if it does, false it it doesn't
  *
@@ -120,7 +118,7 @@ function mapArrayFunctionExample() {
        the arrow-func performs a process on the current element and returns it
        .map() adds the value returned from teh anon-func to the new array
     */
-    var squaredNumbers = numbersToSquare.map(function (number) {
+    var squaredNumbers = numbersToSquare.map( (number) => {
         return number * number; // square the current element and return it
     });
     console.log("Array returned from map with values in passed array squared: ");
@@ -137,7 +135,7 @@ function forEachExample(anArray) {
         "JC", "Daniel", "Amber", "Dana", "Jess", "Vanese", "Ruben",
         "Lindsay", "Anthony", "Lorenzo"]; }
     // forEach() is the JavaScript version of the for-each look in Java
-    anArray.forEach(function (anElement) {
+    anArray.forEach( (anElement) => {
         console.log(anElement);
     });
     anArray.sort(); // sort function sorts an array and replace original
