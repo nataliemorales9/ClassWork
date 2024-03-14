@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  // Class defines module which contains data and methods for the component 
   pageTitle = 'Welcome to FSD - Cohort-1-2024 Angular App';
-  rightnow  = Date();
+  rightnow  = Date();   // Gets the current date and time as a string 
   currentdatetime = Date().substring(0,15);
 }
