@@ -1,5 +1,5 @@
 import { Component }     from '@angular/core';
-import { MoviesInfo }    from '../moviesInfo';
+import { MoviesInfo }    from '../moviesInfo';  // Add movies info interface
 import { FormsModule }   from '@angular/forms';
 import { MoviesService } from '../movies.service';
 import { CommonModule }  from '@angular/common';
@@ -17,6 +17,9 @@ export class AddMovieComponent {
 constructor(private movieService  : MoviesService, 
   private router: Router) {}
 
+  //  Define a place to hold a new movie when entered by the User
+  //  Data entered by the user in the web page 
+  //  variable : data-type - using the interface as a datatype
 public newMovie : MoviesInfo =  {
                                   title : "",
                                   releaseYear: new Date().getFullYear(),
@@ -24,7 +27,8 @@ public newMovie : MoviesInfo =  {
                                 };
 
 
-addMovie(newMovie : MoviesInfo) {
+// funcname(parameter:data-type)
+addMovie(newMovie : MoviesInfo) {   // Using interface as a data-type
   console.table(newMovie);
   this.movieService.addMovies(newMovie)
   this.router.navigate(['/movies'])
