@@ -45,12 +45,17 @@ constructor(private movieService  : MoviesService ) {
   //  2. = - take with the method returns and assign it to (store it in)
 } //  3. this.moviesList is assigned the data from step 2
 
+/* This method is called when a word in the header is clicked
+ A value is passed to tell it which field we should sort by */
 sortListOfMovies(field2Sort : string) {
 
-  switch(field2Sort) {
-    case "Title": { 
-                   this.movieService.sortByTitle() 
-                   break
+  // switch is a substitue for a series of if-else
+  // switch(variable-name)
+  // case says when the variable has this value, do some processing 
+  switch(field2Sort) {  // check the value in field2sort
+    case "Title": {     // if it's the word "Title"
+                   this.movieService.sortByTitle()  // call the sortByTitle method in the movieService
+                   break  // Leave the switch statement (go to the end of switch and continue)
                   }
     case "Date":  {
                    this.movieService.sortByReleaseYear() 
@@ -60,7 +65,7 @@ sortListOfMovies(field2Sort : string) {
                    this.movieService.sortByDirector() 
                    break;
                   }
-    default:   {
+    default:   {    // if the value does not match any case - generate an error
                 throw new Error(`Invalid option (${field2Sort}) sent to sortListOfMovies`);
                }                  
   }
