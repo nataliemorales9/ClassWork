@@ -102,12 +102,15 @@ public class SampleJavaProject {
  **************************************************************************************************/
         displaySectionHeader("Keyboard input demo", true);
         
+        // Define a scanner object to represent the keyboard
+        // class   object-name = new class (parameters) - Java defines System.in to represent the keyboard
         Scanner theKeyboard = new Scanner(System.in);
         
-        String aLine;
+        String aLine;	// This will hold a line of keyboard input that's returned from above scanner object
         
         System.out.println("Please enter your name: ");
-        String userName = theKeyboard.nextLine();
+        		//     object.method
+        String userName = theKeyboard.nextLine(); // Ask the scanner obj to get the next line from the keyboard
         
         System.out.println("Hello, " + userName + " nice to meet you!\n");
         
@@ -115,6 +118,7 @@ public class SampleJavaProject {
         
         aLine = theKeyboard.nextLine();
         
+        // Using the .split() for String to separate the values based on the comma with the data
         String numbers[] = aLine.split(",");
         	
         for(int i=0; i < numbers.length; i++) {
@@ -131,21 +135,24 @@ public class SampleJavaProject {
         
         System.out.println("Hello " + userName + "!");
         
-        int numberOfValuesEnteredByUser = 0;
+        int numberOfValuesEnteredByUser = 0;	// Keeps track of numbers of values entered by the user
         
         boolean shouldLoop = true;
         
+        // loop while the shouldLoop value is true and the max number of values we can hold in the array has been reached
         while(shouldLoop && numberOfValuesEnteredByUser < numbersEnteredByUser.length )
         {
             System.out.println("Would you like to enter some data? (Y or N)");
             aLine = theKeyboard.nextLine();
             
-            if(!aLine.substring(0,1).toUpperCase().equals("Y")) {
-        	break;
+            // Accept any word that starts with "Y" to mean Yet - note the convert to uppercase
+            if(!aLine.substring(0,1).toUpperCase().equals("Y")) {	// If 1st character not Y, break says leave loop
+        	break;							// Exits the loop
             }
             System.out.print("Please enter a numeric value: ");
-            aLine = theKeyboard.nextLine();
+            aLine = theKeyboard.nextLine();		// get a line from the user
             
+            // Convert the line entered by the User to a double value
             double userEnteredValue = Double.parseDouble(aLine);
             
             numbersEnteredByUser[numberOfValuesEnteredByUser] = userEnteredValue;
