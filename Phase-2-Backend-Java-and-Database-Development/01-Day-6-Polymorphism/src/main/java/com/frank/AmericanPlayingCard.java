@@ -32,7 +32,9 @@ public class AmericanPlayingCard extends PlayingCard{
 	{
 		super(DEFAULTCARDVALUE, DEFAULTSUIT, DEFAULTCOLOR);
 	} 
-
+	// This constructor does not allow the color to be sent as a parameter
+		// since color is dependent upon the suit, we will derive the color from the suit
+		// we will get the color from the SuitMap for the suit
 	public AmericanPlayingCard(int value, String suit) {
 		// use the conditional operator (?) to provide conditional parameters to a method
 		// the way the conditional operator works    condition ? value-if-true : value-if-false

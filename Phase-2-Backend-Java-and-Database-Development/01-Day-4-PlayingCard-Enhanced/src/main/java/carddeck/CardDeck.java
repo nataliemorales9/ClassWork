@@ -14,7 +14,8 @@ import playingcard.PlayingCard.CardValue;
 
 public class CardDeck {
 	/*************************************************************************************************
-	 * CardDeck has a set of PLayingCards - "has-a" relationship - define the object in the class
+	 * CardDeck has a set of P
+	 * LayingCards - "has-a" relationship - define the object in the class
 	 ***************************************************************************************************/
 
 	List<PlayingCard> deckOfCards = new ArrayList<PlayingCard>();  // Define a list to hold PlayingCards

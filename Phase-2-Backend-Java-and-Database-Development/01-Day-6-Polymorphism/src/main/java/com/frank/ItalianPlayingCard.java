@@ -11,7 +11,7 @@ public class ItalianPlayingCard extends PlayingCard {
 	private static final String DEFAULTSUIT      = "Joker";
 	private static final int    MAXVALUE         = 13;
 	private static final int    MINVALUE         = 0;
-
+	
 	private static Map<String,  String> suitMap  = new HashMap<String , String>();
 	private static Map<Integer, String> valueMap = new TreeMap<Integer, String>();
 	

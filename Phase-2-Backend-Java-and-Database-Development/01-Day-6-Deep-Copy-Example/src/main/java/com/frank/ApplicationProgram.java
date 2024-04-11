@@ -11,7 +11,7 @@ public class ApplicationProgram {
 
         showArray();
 
-        aClass anObject = new aClass(nums);  // Instantiate aClass Object using our array
+        SampleClass anObject = new SampleClass(nums);  // Instantiate aClass Object using our array
 
         anObject.showClass();
 

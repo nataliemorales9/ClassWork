@@ -31,6 +31,9 @@ public class UsePlayingCards {
 		else {
 			System.out.println("They are NOT equal");
 		}
+		
+		ItalianPlayingCard vitoCorleone = new ItalianPlayingCard(13, "DIAMONDS", "RED");
+		System.out.println("vitoCorleone is:" + vitoCorleone);
 	}
 
 }

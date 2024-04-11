@@ -44,6 +44,10 @@ public class AmericanPlayingCard extends PlayingCard{  // extends indicates inhe
 	// we tell Java to run initializeMaps() as soon as the Application starts
 	//
 	// To do so, define a static method outside any other part of the code
+	//
+	// Static variables are used for attributes common to all objects of the class
+	//
+	// Static variables may only be processed with static variables
 
 	static {             // static method to initialize maps before are ever used
        initializeMaps();

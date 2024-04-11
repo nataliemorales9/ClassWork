@@ -53,7 +53,7 @@ public class ApplicationProgram {
 			//    LinkedMap<String, String>     myMap = new LinkedHashMap<String, String>();
 			//    HashMap<String, String>       myMap = new LinkedHashMap<String, String>();
 
-			// Define a Map to associate a person's name with where they live - ex. "Frank" - "Mayfield"
+			// Define a Map to associate a Starship name with its Captain - ex. "Frank" - "Mayfield"
 			// key   - the person's name is a String
 			// value - the name of the place they live is a String
 			//
