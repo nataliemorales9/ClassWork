@@ -13,6 +13,8 @@ public class FileIOExample {
 	
 	/*****************************************************************************************************************************
 	 * variables shared by all methods in the application
+	 * 
+	 * variables are static because they are used in the static method main() and others
 	 *****************************************************************************************************************************/
 	
     // Define object to interact with user via keyboard
@@ -84,11 +86,14 @@ public class FileIOExample {
     	 *                declarationOfIndependence.txt - file name
     	 *
     	 *******************************************************************************************************************/
-     
+        // the "./" indicates the file is stored in the file directory - 99-File-IO-Example
+        // Define a file object to represent the file on the disk
         File theFile = new File("./declarationOfIndependence.txt");
          
+        // call a method to verify the file exists and is really a file using helper method
         verifyInputFile(theFile);
         
+        // If the verify of the file succeeds, assign it to a scanner object so we can read it
         Scanner file2Read = new Scanner(theFile);
      
 		setupOutputFile("theOutputFile.txt");
