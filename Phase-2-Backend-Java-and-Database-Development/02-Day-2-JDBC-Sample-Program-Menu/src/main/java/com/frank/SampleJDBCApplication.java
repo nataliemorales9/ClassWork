@@ -65,6 +65,10 @@ public class SampleJDBCApplication {
  		theGamblerData = new JdbcGamblerDao(vegasDataSource);
 	}
 	
+	/*************************************************************************************************************
+	 * This is the method that runs and controls the application
+     *************************************************************************************************************/
+
 
     public void run() {
     	
