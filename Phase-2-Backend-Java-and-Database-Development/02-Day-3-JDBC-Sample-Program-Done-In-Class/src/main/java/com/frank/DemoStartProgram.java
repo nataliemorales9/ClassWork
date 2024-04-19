@@ -11,7 +11,7 @@ public class DemoStartProgram {
 	 *   2. What main() does:
 	 *      a. Instantiate an object representing the application program
 	 *      b. Use that object to call the method that runs the application
-	 * 
+	 *  For loop only works with java stuff
 	 *************************************************************************/
 	
 	public static void main(String[] args) {
