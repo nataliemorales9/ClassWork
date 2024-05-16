@@ -1,0 +1,11 @@
+[0;1;32m●[0m mongod.service - MongoDB Database Server
+     Loaded: loaded (/lib/systemd/system/mongod.service; disabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Tue 2024-05-14 02:41:42 UTC; 48s ago
+       Docs: https://docs.mongodb.org/manual
+   Main PID: 6334 (mongod)
+     Memory: 70.8M
+     CGroup: /system.slice/mongod.service
+             └─6334 /usr/bin/mongod --config /etc/mongod.conf
+
+May 14 02:41:42 ip-172-31-31-254 systemd[1]: Started MongoDB Database Server.
+May 14 02:41:42 ip-172-31-31-254 mongod[6334]: {"t":{"$date":"2024-05-14T02:41:42.579Z"},"s":"I",  "c":"CONTROL",  "id":7484500, "ctx":"main","msg":"Environment variable MONGODB_CONFIG_OVERRIDE_NOFORK == 1, overriding \"processManagement.fork\" to false"}
