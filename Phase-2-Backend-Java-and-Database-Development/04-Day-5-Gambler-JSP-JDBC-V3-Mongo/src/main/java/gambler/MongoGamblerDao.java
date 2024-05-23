@@ -39,7 +39,8 @@ import exceptions.DataBaseInsertException;
 import exceptions.DataBaseUpdateException;
 
 public class MongoGamblerDao implements GamblerDao {
-
+	
+	// Connection string to get to the Mongodb Atlas Cloud which is hosting our database and collection
 	private static String connectionString = "mongodb+srv://JavaStudent:JavaRules@cluster0.jyeplot.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 	
 	private static ServerApi serverApi = null;;
